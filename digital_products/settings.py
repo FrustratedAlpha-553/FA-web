@@ -24,6 +24,7 @@ SECRET_KEY = 'django-insecure-mfber-=$q4hg!5!63(0a!)jggjnnq&s(%hrw=qyvasgq^f$r10
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+IS_DEVEL = True
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'products',
 ]
 
@@ -118,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-MEDIA_DIR = os.path.join(BASE_DIR,'media/')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 MEDIA_URL = '/media/'
 
 # Default primary key field type
